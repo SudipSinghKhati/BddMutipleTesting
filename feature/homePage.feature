@@ -4,4 +4,6 @@ Feature: Home Page
     so that I feel welcome to the site.
 
 Scenario: Hello Message
-         
+    Given user visits home page
+    Then user should see hello message
+    Then the reponse status should be 200     
